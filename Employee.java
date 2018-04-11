@@ -17,4 +17,5 @@ public abstract class Employee
 	public void setWage(float newWage){wage = newWage;}
 	public void setHoursPerDay(int newHours){hoursPerDay = newHours;}
 	public void setHourlyOrSalary(boolean newStatus){hourlyOrSalary = newStatus;}
+
 }
