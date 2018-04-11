@@ -1,7 +1,6 @@
 # OOPProject
 
-OOP class project. Please notice me senpai!!!!!!!
+OOP class project. This is a WIP
 
 Standards:
   1. tabs not spaces! (4 spaces per tab)
-  2. 
