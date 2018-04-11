@@ -19,4 +19,6 @@ public abstract class Employee
 	{
 		System.out.println("Employee hours per day: " + hoursPerDay);
 	}
+	
+	public abstract void setDescription();
 }
