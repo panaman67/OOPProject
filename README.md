@@ -3,9 +3,10 @@
 OOP class project. This is a WIP
 
 Git Guidelines:
-	1. **NEVER** commit directly to master
-	2. Nick will merge pull requests, solving any conflicts as nessesary
-	3. Always have a great time, if something goes wrong, we can always revert.... I think...
+
+1. **NEVER** commit directly to master
+2. Nick will merge pull requests, solving any conflicts as nessesary
+3. Always have a great time, if something goes wrong, we can always revert.... I think...
 	
 
 Notes section:
