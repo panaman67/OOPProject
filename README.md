@@ -11,6 +11,7 @@ Git Guidelines:
 1. **NEVER** commit directly to master, always pusy *YOUR* bramch and create pull request
 2. Nick will merge pull requests, solving any conflicts as nessesary
 3. Always have a great time, if something goes wrong, we can always revert.... I think...
+4. **git push origin :*branch name*** this deletes remote branch. Do NOT do to master, only toyour working branches when done
 	
 
 Notes section:
