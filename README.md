@@ -8,7 +8,7 @@ Git Resources:
 
 Git Guidelines:
 
-1. **NEVER** commit directly to master, always pusy *YOUR* branch and create pull request
+1. **NEVER** commit directly to master, always push to *YOUR* branch and create pull request
 2. Nick will merge pull requests, solving any conflicts as necessary
 3. Always have a great time, if something goes wrong, we can always revert.... I think...
 
