@@ -4,7 +4,7 @@ public abstract class Food
   String name;
   float price;
 
-  public int getID(){return id;}
-  public String getName(){return name;}
-  public float getPrice(){return name;}
+  public int getID(){ return id; }
+  public String getName(){ return name; }
+  public float getPrice(){ return price; }
 }
