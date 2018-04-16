@@ -10,7 +10,8 @@ public class Order<K, V> extends HashMap<K, V>
 		for (Entry<K, V> entry : this.entrySet())
 		{
 			ret += String.format("%d %-20s %d%n", 
-					++listNum, entry.getKey(), entry.getValue());
+					++listNum, Food.menu.get((int)entry.getKey()).name,
+				       	entry.getValue());
 		}
 		return ret;
 	}
