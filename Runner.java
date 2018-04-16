@@ -8,6 +8,5 @@ public class Runner
 
 		nicksOrder.put("Egg Roll", 5);
 		System.out.println(nicksOrder);
-
 	}
 }
