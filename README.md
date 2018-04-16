@@ -23,12 +23,12 @@ THIS IS A TEST
 - Appetizer - Nick
 - [ ] Egg Roll
 - [ ] Steam Dumplings
-- Vegetable Food
+- Vegetable Food - Gavin
 - [ ] Homestyle Tofu
 - [ ] Eggplant
-- Chicken Food
+- Chicken Food - TJ
 - [ ] Sweet and Sour Chicken
 - [ ] Orange Chicken
-- Beef Food
+- Beef Food - Stanley
 - [ ] Beef Broccoli
 - [ ] Mongolian Beef
