@@ -1,3 +1,4 @@
+import java.util.Map.*;
 
 public class Runner
 {
@@ -5,15 +6,11 @@ public class Runner
 	{
 
 		float amountDue = 0f;
-		Order<String, Integer> nicksOrder = new Order<String, Integer>();
-		//System.out.println(Food.menu);
+		Order<Integer, Integer> nicksOrder = new Order<Integer, Integer>();
 
-		nicksOrder.put("Egg Roll", 5);
+		nicksOrder.put(0/*Egg Roll*/ , 5);
 		System.out.println(nicksOrder);
-
-		for (Entry<String, Integer> orderedFood : nicksOrder.entrySet())
-		{
-			//Food.menu.get()
-		}
+		
+		System.out.println(nicksOrder.calculateBill());
 	}
 }
