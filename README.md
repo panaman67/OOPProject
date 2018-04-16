@@ -20,15 +20,15 @@ Feel free to add to this doc with notes or general stuff.
 
 THIS IS A TEST
 
-- Appetizer
-- [ ] Egg Roll      - Nick
+- Appetizer - Nick
+- [ ] Egg Roll
 - [ ] Steam Dumplings
 - [ ] Vegetable Food
 - [ ] Homestyle Tofu
 - [ ] Eggplant
 - Chicken Food
 - [ ] Sweet and Sour Chicken
-- [ ] Orange Chicken    - Nick
+- [ ] Orange Chicken
 - Beef Food
 - [ ] Beef Broccoli
 - [ ] Mongolian Beef
