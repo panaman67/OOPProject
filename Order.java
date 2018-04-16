@@ -1,15 +1,15 @@
-import java.util.Stack;
+import java.util.HashMap;
 
-public class Order<T> extends Stack<T>
+public class Order<Key, Value> extends HashMap<Key, Value>
 {
 	public String toString()
 	{
 		String ret = new String();
-		for(T obj : this)
-		{
+		//for(T obj : this)
+		//{
     		//System.out.println(obj);
-			ret += obj;
-		}
-		return ret;
+		//	ret += obj;
+		//}
+		return "Order toString";
 	}
 }
