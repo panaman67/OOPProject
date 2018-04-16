@@ -23,7 +23,7 @@ THIS IS A TEST
 - Appetizer - Nick
 - [ ] Egg Roll
 - [ ] Steam Dumplings
-- [ ] Vegetable Food
+- Vegetable Food
 - [ ] Homestyle Tofu
 - [ ] Eggplant
 - Chicken Food
