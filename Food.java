@@ -7,10 +7,10 @@ public abstract class Food
 	float price;
 	
 	// Subclasses CAN override, 
-	// dont know wat that looks like yet
+	// CALL return super.toString() + your extras here????????
 	public String toString()
 	{
-		return String.format("%-5d %s%n", id, name);
+		return String.format(" %-5d %-25s %7.2f%n", id, name, price);
 	}
 
 	public static List<Food> menu = new ArrayList<Food>() {{
