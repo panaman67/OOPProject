@@ -18,9 +18,9 @@ public abstract class Food
 		add(new Dumpling());	// 1
 	}};
 
-	public int getID(){ return id; }
-	public String getName(){ return name; }
-	public float getPrice(){ return price; }
+	public int getID() { return id; }
+	public String getName() { return name; }
+	public float getPrice() { return price; }
 
 	/*  Example abstract methods to implement in our foods?
 	 *  will uncomment when we decide
