@@ -8,11 +8,6 @@ public class Runner
 		Scanner stdin = new Scanner(System.in);
 		Order<Integer, Integer> nicksOrder = new Order<Integer, Integer>();
 
-		//nicksOrder.put(Food.menu.get(0).id/*Egg Roll*/, 5);
-		//System.out.println(nicksOrder);
-		
-		//System.out.println(nicksOrder.calculateBill());
-
 		for (Food item : Food.menu)
 		{
 			System.out.print(item);
