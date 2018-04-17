@@ -3,7 +3,7 @@ public class EggRoll extends Food
 {
 	public EggRoll()
 	{
-		id = 1;
+		id = 0;
 		price = 2.45f;
 		name = "Egg Roll";
 	}
