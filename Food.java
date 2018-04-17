@@ -7,8 +7,8 @@ public abstract class Food
 	float price;
 
 	public static List<Food> menu = new ArrayList<Food>() {{
-		add(new EggRoll());
-		add(new Dumpling());
+		add(new EggRoll()); 	// 0
+		add(new Dumpling());	// 1
 	}};
 
 	public int getID(){ return id; }
