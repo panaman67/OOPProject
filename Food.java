@@ -8,6 +8,7 @@ public abstract class Food
 
 	public static List<Food> menu = new ArrayList<Food>() {{
 		add(new EggRoll());
+		add(new Dumpling());
 	}};
 
 	public int getID(){ return id; }
