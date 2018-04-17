@@ -5,6 +5,13 @@ public abstract class Food
 	int id;
 	String name;
 	float price;
+	
+	// Subclasses CAN override, 
+	// dont know wat that looks like yet
+	public String toString()
+	{
+		return String.format("%-5d %s%n", id, name);
+	}
 
 	public static List<Food> menu = new ArrayList<Food>() {{
 		add(new EggRoll()); 	// 0

@@ -15,7 +15,7 @@ public class Runner
 
 		for (Food item : Food.menu)
 		{
-			System.out.println(item);
+			System.out.print(item);
 		}
 
 		System.out.print("What would you like to order: ");
