@@ -20,15 +20,16 @@ Feel free to add to this doc with notes or general stuff.
 
 THIS IS A TEST
 
+name: ID number to assign in constructor
 - Appetizer - Nick
-- [ ] Egg Roll
-- [ ] Steam Dumplings
+- [ ] Egg Roll: 0
+- [ ] Steam Dumplings: 1
 - Vegetable Food - Gavin
-- [ ] Homestyle Tofu
-- [ ] Eggplant
+- [ ] Homestyle Tofu: 2
+- [ ] Eggplant: 3
 - Chicken Food - TJ
-- [ ] Sweet and Sour Chicken
-- [ ] Orange Chicken
+- [ ] Sweet and Sour Chicken: 4
+- [ ] Orange Chicken: 5
 - Beef Food - Stanley
-- [ ] Beef Broccoli
-- [ ] Mongolian Beef
+- [ ] Beef Broccoli: 6
+- [ ] Mongolian Beef: 7

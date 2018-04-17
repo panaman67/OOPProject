@@ -1,15 +1,29 @@
-import java.util.Stack;
+import java.util.HashMap;
 
-public class Order<T> extends Stack<T>
+public class Order<K, V> extends HashMap<K, V>
 {
 	public String toString()
 	{
 		String ret = new String();
-		for(T obj : this)
+
+		int listNum = 0;
+		for (Entry<K, V> entry : this.entrySet())
 		{
-    		//System.out.println(obj);
-			ret += obj;
+			ret += String.format("%d %-20s %d%n", 
+					++listNum, Food.menu.get((int)entry.getKey()).name,
+				       	entry.getValue());
 		}
 		return ret;
+	}
+
+	public float calculateBill()
+	{
+		float amountDue = 0f;
+		for (Entry<K, V> orderedFood : this.entrySet())
+		{
+			amountDue += Food.menu.get((int)orderedFood.getKey()).getPrice() 
+				* (int)orderedFood.getValue();
+		}
+		return amountDue;
 	}
 }
