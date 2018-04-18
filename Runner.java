@@ -15,6 +15,7 @@ public class Runner
 		while (!isInteger(input))
 		{
 			System.out.println("Please enter a valid id nerd!");
+			while (stdin.hasNext()){input = stdin.next();}
 			System.out.print("What would you like to order: ");
 			input = stdin.next();
 		}
