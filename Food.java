@@ -8,16 +8,15 @@ public abstract class Food
 
 	// Subclasses CAN override,
 	// CALL return super.toString() + your extras here????????
-	public String toString()
-	{
-		return String.format(" %-5d %-25s %7.2f%n", id, name, price);
-	}
-
 	public static List<Food> menu = new ArrayList<Food>() {{
-		add(new EggRoll()); 	// 0
-		add(new Dumpling());	// 1
-		add(new BeefBroccoli());	//6
-		add(new MongolianBeef());	//7
+		add(new EggRoll()); 		// 0
+		add(new Dumpling());		// 1
+		add(new Dumpling());		// 2
+		add(new Dumpling());		// 3
+		add(new Dumpling());		// 4
+		add(new Dumpling());		// 5
+		add(new BeefBroccoli());	// 6
+		add(new MongolianBeef());	// 7
 	}};
 
 	public int getID() { return id; }
@@ -31,4 +30,20 @@ public abstract class Food
 	 public abstract boolean isMainDish();
 	 public abstract boolean isAppetizer();
 	*/
+
+	public static void printMenu()
+	{
+		System.out.println("Object Oriental Place Chinese Restaurant");
+		System.out.println("------------------Menu------------------");
+
+		for (Food item : Food.menu)
+		{
+			System.out.print(item);
+		}
+	}
+
+	public String toString()
+	{
+		return String.format(" %-5d %-25s %7.2f%n", id, name, price);
+	}
 }
