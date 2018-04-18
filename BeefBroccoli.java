@@ -1,6 +1,6 @@
 public class BeefBroccoli extends Food
 {
-  public BeefBroccoli
+  public BeefBroccoli()
   {
     id = 6;
     name = "Beef Broccoli";
