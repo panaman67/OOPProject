@@ -8,11 +8,6 @@ public abstract class Food
 
 	// Subclasses CAN override,
 	// CALL return super.toString() + your extras here????????
-	public String toString()
-	{
-		return String.format(" %-5d %-25s %7.2f%n", id, name, price);
-	}
-
 	public static List<Food> menu = new ArrayList<Food>() {{
 		add(new EggRoll()); 	// 0
 		add(new Dumpling());	// 1
@@ -41,5 +36,10 @@ public abstract class Food
 		{
 			System.out.print(item);
 		}
+	}
+
+	public String toString()
+	{
+		return String.format(" %-5d %-25s %7.2f%n", id, name, price);
 	}
 }
