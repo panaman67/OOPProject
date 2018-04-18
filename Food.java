@@ -5,8 +5,8 @@ public abstract class Food
 	int id;
 	String name;
 	float price;
-	
-	// Subclasses CAN override, 
+
+	// Subclasses CAN override,
 	// CALL return super.toString() + your extras here????????
 	public String toString()
 	{
@@ -16,6 +16,8 @@ public abstract class Food
 	public static List<Food> menu = new ArrayList<Food>() {{
 		add(new EggRoll()); 	// 0
 		add(new Dumpling());	// 1
+		add(new BeefBroccoli());	//6
+		add(new MongolianBeef());	//7
 	}};
 
 	public int getID() { return id; }
