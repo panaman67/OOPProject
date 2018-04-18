@@ -8,6 +8,7 @@ public class Runner
 		Scanner stdin = new Scanner(System.in);
 		Order<Integer, Integer> nicksOrder = new Order<Integer, Integer>();	
 		int choice = Integer.MAX_VALUE;
+		String input = new String();
 
 		Food.printMenu();
 		System.out.print("What would you like to order: ");
@@ -23,10 +24,18 @@ public class Runner
 				}
 				break;
 			}
-			else
+			//This is a hack. I have NO fucking clue why but
+			//the other way I did it had weird error dups.
+			//I will look into it later but for now, copying the 
+			//above if format fixed my problem.
+			else if (stdin.hasNext())
 			{
-				System.out.println("Input required to be integer");
-				stdin.nextLine();
+				input = stdin.nextLine();
+				if (input.length() > 0)
+				{
+					System.out.println("Input required to be integer");
+					continue;
+				}
 			}
 		}
 		nicksOrder.put(Food.menu.get(choice).id, 10);
