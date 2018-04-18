@@ -24,6 +24,8 @@ public class Runner
 				}
 				break;
 			}
+			//TODO
+			//FIXME
 			//This is a hack. I have NO fucking clue why but
 			//the other way I did it had weird error dups.
 			//I will look into it later but for now, copying the 
