@@ -29,4 +29,15 @@ public abstract class Food
 	 public abstract boolean isMainDish();
 	 public abstract boolean isAppetizer();
 	*/
+
+	public static void printMenu()
+	{
+		System.out.println("Object Oriental Place Chinese Restaurant");
+		System.out.println("------------------Menu------------------");
+
+		for (Food item : Food.menu)
+		{
+			System.out.print(item);
+		}
+	}
 }
