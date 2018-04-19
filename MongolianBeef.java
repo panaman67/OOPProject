@@ -1,6 +1,6 @@
 public class MongolianBeef extends Food
 {
-  public MongolianBeef
+  public MongolianBeef()
   {
     id = 7;
     name = "Mongolian Beef";
