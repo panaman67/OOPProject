@@ -7,19 +7,23 @@ public class Runner
 	{
 		Order<Integer, Integer> nicksOrder = new Order<Integer, Integer>();	
 		int amountOrdered = 0, selected = -1;
-		Scanner bab = new Scanner(System.in);
+		Scanner stdin = new Scanner(System.in);
 		String input = new String();
 
 		Food.printMenu();
-		
-		System.out.print("What to order (ID#): ");
-		selected = requestOrderID();
-		
-		System.out.print("How many: ");
-		amountOrdered = requestAmount();
+	
+		do{
+			System.out.print("What to order (ID#): ");
+			selected = requestOrderID();
+			
+			System.out.print("How many: ");
+			amountOrdered = requestAmount();
 
-		nicksOrder.put(Food.menu.get(selected).id, amountOrdered);
-
+			nicksOrder.put(Food.menu.get(selected).id, amountOrdered);
+			
+			System.out.print("Anything else (Y/N): ");
+			input = stdin.nextLine();
+		} while (!input.toUpperCase().equals("N"));
 		System.out.println(nicksOrder);
 		System.out.println(String.format("Your final bill is: %.2f", 
 					nicksOrder.calculateBill()));
