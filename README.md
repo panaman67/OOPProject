@@ -33,7 +33,3 @@ name: ID number to assign in constructor
 - Beef Food - Stanley
 - [ ] Beef Broccoli: 6
 - [ ] Mongolian Beef: 7
-
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
