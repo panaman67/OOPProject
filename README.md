@@ -22,8 +22,8 @@ THIS IS A TEST
 
 name: ID number to assign in constructor
 - Appetizer - Nick
-- [ ] Egg Roll: 0
-- [ ] Steam Dumplings: 1
+- [x] Egg Roll: 0
+- [x] Steam Dumplings: 1
 - Vegetable Food - Gavin
 - [ ] Homestyle Tofu: 2
 - [ ] Eggplant: 3
@@ -33,3 +33,7 @@ name: ID number to assign in constructor
 - Beef Food - Stanley
 - [ ] Beef Broccoli: 6
 - [ ] Mongolian Beef: 7
+
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
