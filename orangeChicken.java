@@ -1,5 +1,5 @@
-public class orangeChicken extends Food{
-  public orangeChicken{
+public class OrangeChicken extends Food{
+  public OrangeChicken{
     id = 5;
     name = "Orange Chicken";
     price = 8.99f;
