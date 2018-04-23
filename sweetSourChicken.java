@@ -1,4 +1,4 @@
-public class SweetSourChicken extends food{
+public class SweetSourChicken extends Food{
 
     public SweetSourChicken(){
       id = 4;
