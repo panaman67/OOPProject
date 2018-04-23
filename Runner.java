@@ -5,13 +5,12 @@ public class Runner
 {
 	public static void main(String[] args)
 	{
-		Order<Integer, Integer> nicksOrder = new Order<Integer, Integer>();	
-		int amountOrdered = 0, selected = -1;
 		Scanner stdin = new Scanner(System.in);
 		String input = new String();
+		int amountOrdered = 0, selected = -1;
+		Order<Integer, Integer> nicksOrder = new Order<Integer, Integer>();	
 
 		Food.printMenu();
-	
 		do{
 			System.out.print("What to order (ID#): ");
 			selected = requestOrderID();
@@ -24,12 +23,12 @@ public class Runner
 			System.out.print("Anything else (Y/N): ");
 			input = stdin.nextLine();
 		} while (!input.toUpperCase().equals("N"));
+
 		System.out.println(nicksOrder);
-		System.out.println(String.format("Your final bill is: %.2f", 
+		System.out.println(String.format("Your final bill is: %.2f",
 					nicksOrder.calculateBill()));
 	}
 
-	// TODO Will rename to something better
 	static int requestOrderID()
 	{
 		Scanner bab = new Scanner(System.in);
