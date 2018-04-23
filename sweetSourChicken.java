@@ -1,5 +1,4 @@
 public class SweetSourChicken extends Food{
-
     public SweetSourChicken(){
       id = 4;
       name = "Sweet and Sour Chicken";
