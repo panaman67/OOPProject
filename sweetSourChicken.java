@@ -1,6 +1,6 @@
-public class sweetSourChicken extends food{
+public class SweetSourChicken extends food{
 
-    public sweetSourChicken(){
+    public SweetSourChicken(){
       id = 4;
       name = "Sweet and Sour Chicken";
       price = 8.99f;
