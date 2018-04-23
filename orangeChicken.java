@@ -6,6 +6,6 @@ public class OrangeChicken extends Food{
   }
 
   public String getDescription(){
-    return "fried chicken pieces coated in a sweet orange-flavored chili sauce";
+    return "Fried chicken pieces coated in a sweet orange-flavored chili sauce";
   }
 }
