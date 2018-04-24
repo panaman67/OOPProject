@@ -11,10 +11,10 @@ public abstract class Food
 	public static List<Food> menu = new ArrayList<Food>() {{
 		add(new EggRoll()); 		// 0
 		add(new Dumpling());		// 1 
-		add(new Dumpling());		// 2 OVERRIDE
-		add(new Dumpling());		// 3 OVERRIDE
-		add(new Dumpling());		// 4 OVERRIDE
-		add(new Dumpling());		// 5 OVERRIDE
+		add(new Tofu());		// 2
+		add(new Eggplant());		// 3
+		add(new SweetSourChicken());	// 4
+		add(new OrangeChicken());	// 5
 		add(new BeefBroccoli());	// 6
 		add(new MongolianBeef());	// 7
 	}};
