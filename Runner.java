@@ -10,20 +10,22 @@ public class Runner
 		int amountOrdered = 0, selected = -1;
 		Order<Integer, Integer> nicksOrder = new Order<Integer, Integer>();
 
-		System.out.print("What to order (ID#): ");
-		selected = requestOrderID();
-		
-		switch (selected)
+		do
 		{
-			case -1:
-			case  0:
-				Food.printMenu();
-				break;
-			default:
-				System.out.print("What to order (ID#): ");
-				selected = requestOrderID();
-				break;
-		}
+			switch (selected)
+			{
+				case -1:
+				case  0:
+					Food.printMenu();
+					break;
+				default:
+					System.out.print("What to order (ID#): ");
+					selected = requestOrderID();
+					break;
+			}
+			printOptions();
+
+		} while (!input.toUpperCase().equals("N"));
 		/*		
 			do{
 				System.out.print("What to order (ID#): ");
@@ -63,5 +65,11 @@ public class Runner
 		} while (num < 0);
 
 		return num;
+	}
+
+	static void printOptions()
+	{
+		System.out.print("----------------Options-----------------");
+		System.out.print(String.format("%n 0: Print menu%n"));
 	}
 }
