@@ -8,25 +8,39 @@ public class Runner
 		Scanner stdin = new Scanner(System.in);
 		String input = new String();
 		int amountOrdered = 0, selected = -1;
-		Order<Integer, Integer> nicksOrder = new Order<Integer, Integer>();	
+		Order<Integer, Integer> nicksOrder = new Order<Integer, Integer>();
 
-		Food.printMenu();
-		do{
-			System.out.print("What to order (ID#): ");
-			selected = requestOrderID();
-			
-			System.out.print("How many: ");
-			amountOrdered = requestAmount();
+		System.out.print("What to order (ID#): ");
+		selected = requestOrderID();
+		
+		switch (selected)
+		{
+			case -1:
+			case  0:
+				Food.printMenu();
+				break;
+			default:
+				System.out.print("What to order (ID#): ");
+				selected = requestOrderID();
+				break;
+		}
+		/*		
+			do{
+				System.out.print("What to order (ID#): ");
+				selected = requestOrderID();
+				
+				System.out.print("How many: ");
+				amountOrdered = requestAmount();
 
-			nicksOrder.put(Food.menu.get(selected).id, amountOrdered);
-			
-			System.out.print("Anything else (Y/N): ");
-			input = stdin.nextLine();
-		} while (!input.toUpperCase().equals("N"));
-
+				nicksOrder.put(Food.menu.get(selected).id, amountOrdered);
+				
+				System.out.print("Anything else (Y/N): ");
+				input = stdin.nextLine();
+			} while (!input.toUpperCase().equals("N"));
+		*/
 		System.out.println(nicksOrder);
-		System.out.println(String.format("Your final bill is: %.2f",
-					nicksOrder.calculateBill()));
+		//System.out.println(String.format("Your final bill is: %.2f",
+					//nicksOrder.calculateBill()));
 	}
 
 	static int requestOrderID()
