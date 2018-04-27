@@ -18,18 +18,18 @@ Notes section:
 Hey guys! having a great time working and learning Git with you guys
 Feel free to add to this doc with notes or general stuff.
 
-THIS IS A TEST
+- [ ] Main function
 
 name: ID number to assign in constructor
 - Appetizer - Nick
 - [x] Egg Roll: 0
 - [x] Steam Dumplings: 1
 - Vegetable Food - Gavin
-- [ ] Homestyle Tofu: 2
-- [ ] Eggplant: 3
+- [x] Homestyle Tofu: 2
+- [x] Eggplant: 3
 - Chicken Food - TJ
-- [ ] Sweet and Sour Chicken: 4
-- [ ] Orange Chicken: 5
+- [x] Sweet and Sour Chicken: 4
+- [x] Orange Chicken: 5
 - Beef Food - Stanley
-- [ ] Beef Broccoli: 6
-- [ ] Mongolian Beef: 7
+- [x] Beef Broccoli: 6
+- [x] Mongolian Beef: 7
