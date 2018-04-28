@@ -7,12 +7,14 @@ public class Order<K, V> extends HashMap<K, V>
 		String ret = new String();
 
 		int listNum = 0;
+		ret += "----------Your order----------\n";
 		for (Entry<K, V> entry : this.entrySet())
 		{
 			ret += String.format("%d %-20s %d%n", 
 					++listNum, Food.menu.get((int)entry.getKey()).name,
 				       	entry.getValue());
 		}
+		ret += "------------------------------\n";
 		return ret;
 	}
 
