@@ -10,13 +10,13 @@ public class Runner
 		int amountOrdered = 0, selected = -1;
 		Order<Integer, Integer> nicksOrder = new Order<Integer, Integer>();
 		
-		do
+		System.out.println("Object Oriental Palace Chinese Restaurant");
+inputloop:	do
 		{
 			printOptions();
-			selected = Helpers.extractUnsignedInt(stdin.nextLine());
+			selected = Helpers.extractUnsignedInt(stdin.nextLine(), 4);
 			switch (selected)
 			{
-				case -1:
 				case  0:
 					Food.printMenu();
 					break;
@@ -27,16 +27,26 @@ public class Runner
 					amountOrdered = requestAmount();
 					nicksOrder.put(selected, amountOrdered);
 					break;
-				default:
-					System.err.println(String.format("UR BAD%n"));
+				case 2:
+					System.out.print("Enter item ID: ");
+					selected = requestOrderID();
+					System.out.println("Description: " 
+							+ Food.menu.get(selected).getDescription());
+					break;
+				case 3:
+					break inputloop;
 			}
 			System.out.print("Anything else (Y/N): ");
 			input = stdin.nextLine();
 		} while (!input.toUpperCase().equals("N"));
 
-		System.out.println(nicksOrder);
-		System.out.println(String.format("Your final bill is: %.2f",
-					nicksOrder.calculateBill()));
+		if (!nicksOrder.isEmpty())
+		{
+			System.out.println(nicksOrder);
+			System.out.println(String.format("Your final bill is: $%.2f",
+								nicksOrder.calculateBill()));
+		}
+		System.out.println("\nThank you! Please come again!");
 	}
 
 	static int requestOrderID()
@@ -63,8 +73,11 @@ public class Runner
 
 	static void printOptions()
 	{
-		System.out.println("------------Options-------------");
-		System.out.println(" 0: Print menu");
-		System.out.println(" 1: Order something");
+		System.out.print("-----------------Options-----------------\n" +
+		                 " 0: Print menu\n" +
+		                 " 1: Order something\n" +
+		                 " 2: Get item description\n" +
+		                 " 3: Done\n" +
+		                 "Select option(#): ");
 	}
 }
