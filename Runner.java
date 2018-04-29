@@ -11,6 +11,7 @@ public class Runner
 		Order<Integer, Integer> nicksOrder = new Order<Integer, Integer>();
 		
 		System.out.println("Object Oriental Palace Chinese Restaurant");
+		Food.printMenu();
 inputloop:	do
 		{
 			printOptions();
