@@ -1,4 +1,3 @@
-
 public class Helpers
 {
 	static boolean isInteger(String str)

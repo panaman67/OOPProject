@@ -1,4 +1,3 @@
-
 public class Dumpling extends Food
 {
 	public Dumpling()

@@ -7,14 +7,14 @@ public abstract class Food
 	float price;
 
 	public static List<Food> menu = new ArrayList<Food>() {{
-		add(new EggRoll()); 		// 0
-		add(new Dumpling());		// 1 
-		add(new Tofu());		// 2
-		add(new Eggplant());		// 3
+		add(new EggRoll()); 			// 0
+		add(new Dumpling());			// 1 
+		add(new Tofu());				// 2
+		add(new Eggplant());			// 3
 		add(new SweetSourChicken());	// 4
-		add(new OrangeChicken());	// 5
-		add(new BeefBroccoli());	// 6
-		add(new MongolianBeef());	// 7
+		add(new OrangeChicken());		// 5
+		add(new BeefBroccoli());		// 6
+		add(new MongolianBeef());		// 7
 	}};
 
 	public int getID() { return id; }

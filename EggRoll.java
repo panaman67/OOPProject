@@ -1,4 +1,3 @@
-
 public class EggRoll extends Food
 {
 	public EggRoll()
@@ -13,5 +12,4 @@ public class EggRoll extends Food
 		return "Cabbage, carrots, mushrooms, green onions and chicken" +
 		       " in a crispy wonton wrapper";
 	}
-
 }

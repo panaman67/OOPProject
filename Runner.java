@@ -12,7 +12,8 @@ public class Runner
 		
 		System.out.println("Object Oriental Palace Chinese Restaurant");
 		Food.printMenu();
-inputloop:	do
+inputloop:
+		do
 		{
 			printOptions();
 			selected = Helpers.extractUnsignedInt(stdin.nextLine(), 4);
