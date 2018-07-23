@@ -12,6 +12,7 @@ public class Runner
 		
 		System.out.println("Object Oriental Palace Chinese Restaurant");
 		Food.printMenu();
+
 inputloop:
 		do
 		{
